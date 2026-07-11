@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Commercial Cleaning Landing Page for Regency - Nanaimo, BC",
   "private": true,
-  "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "start": "vercel start"
-  },
   "keywords": ["commercial cleaning", "landing page", "vercel"],
   "author": "Regency Commercial Cleaning",
   "license": "MIT"

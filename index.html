@@ -827,36 +827,25 @@
   const formState = document.getElementById('formState');
   const successState = document.getElementById('successState');
 
-  form.addEventListener('submit', async function(e){
+  form.addEventListener('submit', function(e){
     e.preventDefault();
     
-    const formData = {
-      fname: document.getElementById('fname').value,
-      phone: document.getElementById('phone').value,
-      email: document.getElementById('email').value,
-      facility: document.getElementById('facility').value,
-      notes: document.getElementById('notes').value
-    };
+    // Get form data
+    const fname = document.getElementById('fname').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const facility = document.getElementById('facility').value;
+    const notes = document.getElementById('notes').value;
     
-    try {
-      const response = await fetch('/api/submit-lead', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(formData)
-      });
-      
-      if (response.ok) {
-        // Fire Google Ads conversion tracking event here, e.g.:
-        // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
-        formState.style.display = 'none';
-        successState.style.display = 'block';
-      } else {
-        alert('Error submitting form. Please try again or call 250-667-0422.');
-      }
-    } catch (error) {
-      alert('Error submitting form. Please try again or call 250-667-0422.');
-      console.error('Form error:', error);
-    }
+    // Log the lead (you can integrate with email service later)
+    console.log('New Lead:', { fname, phone, email, facility, notes, timestamp: new Date().toISOString() });
+    
+    // Fire Google Ads conversion tracking event here, e.g.:
+    // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
+    
+    // Show success state
+    formState.style.display = 'none';
+    successState.style.display = 'block';
   });
 </script>
 

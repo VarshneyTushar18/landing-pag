@@ -827,13 +827,36 @@
   const formState = document.getElementById('formState');
   const successState = document.getElementById('successState');
 
-  form.addEventListener('submit', function(e){
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
-    // TODO: replace this block with your real form handler (CRM webhook, email API, etc.)
-    // Fire Google Ads conversion tracking event here, e.g.:
-    // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
-    formState.style.display = 'none';
-    successState.style.display = 'block';
+    
+    const formData = {
+      fname: document.getElementById('fname').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      facility: document.getElementById('facility').value,
+      notes: document.getElementById('notes').value
+    };
+    
+    try {
+      const response = await fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        // Fire Google Ads conversion tracking event here, e.g.:
+        // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
+        formState.style.display = 'none';
+        successState.style.display = 'block';
+      } else {
+        alert('Error submitting form. Please try again or call 250-667-0422.');
+      }
+    } catch (error) {
+      alert('Error submitting form. Please try again or call 250-667-0422.');
+      console.error('Form error:', error);
+    }
   });
 </script>
 

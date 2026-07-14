@@ -188,6 +188,10 @@
   .pain-card p{font-size:14.5px;color:var(--text-soft);line-height:1.5;}
 
   /* ===== Real crew photo trust section ===== */
+  .crew-checklist{display:flex;justify-content:center;flex-wrap:wrap;gap:14px 30px;max-width:800px;margin:0 auto 22px;list-style:none;padding:0;}
+  .crew-checklist li{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600;color:var(--ink);}
+  .crew-checklist .chk{width:20px;height:20px;border-radius:50%;background:rgba(15,158,147,0.12);color:var(--teal-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;}
+  .crew-belief{text-align:center;font-family:'Fraunces';font-style:italic;font-size:19px;color:var(--ink);margin-bottom:40px;}
   .crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
   .crew-photo{margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;}
   .crew-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;display:block;}
@@ -369,14 +373,14 @@
 <section class="hero" id="quote">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">🧽 Commercial Cleaning · Nanaimo &amp; Vancouver Island</span>
-      <h1>The Commercial Cleaning Crew Nanaimo Offices, Clinics &amp; Buildings <em>Actually Rely On</em></h1>
-      <p class="lead">Bonded, insured and background-checked teams keeping offices, financial institutions, medical &amp; dental clinics, and apartment buildings spotless — with a custom a la carte plan built around your budget.</p>
+      <span class="eyebrow">🧽 Professional. Local. Accountable.</span>
+      <h1>Commercial Cleaning Services <em>Nanaimo Businesses Trust</em></h1>
+      <p class="lead">Reliable commercial cleaning services for offices, medical clinics, dental practices, financial institutions, apartment buildings, and commercial facilities throughout Nanaimo and Parksville communities.</p>
       <ul class="hero-points">
         <li><span class="chk">✓</span> BBB A+ Accredited Business</li>
-        <li><span class="chk">✓</span> Fully Insured &amp; Bonded Teams</li>
-        <li><span class="chk">✓</span> Background-Checked, Uniformed Staff</li>
-        <li><span class="chk">✓</span> Free On-Site Quote, No Obligation</li>
+        <li><span class="chk">✓</span> Fully Insured &amp; Bonded Employees</li>
+        <li><span class="chk">✓</span> Background-Checked, Uniformed Teams</li>
+        <li><span class="chk">✓</span> Free On-Site Cleaning Assessment</li>
       </ul>
 
       <div class="hero-photo-row">
@@ -447,35 +451,14 @@
   <svg viewBox="0 0 1200 64" preserveAspectRatio="none"><polygon points="0,64 1200,20 1200,64" fill="#ffffff"/></svg>
 </div>
 
-<!-- ============ PAIN POINTS ============ -->
+<!-- ============ WHY REGENCY NARRATIVE ============ -->
 <section>
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">The Problem</span>
-      <h2>Tired of Cleaners Who Cut Corners?</h2>
-      <p>Most facility managers don't switch cleaning companies for a better price — they switch because of missed spots, no-shows, and zero accountability.</p>
-    </div>
-    <div class="pain-grid">
-      <div class="pain-card">
-        <div class="icon">⚠</div>
-        <h4>Inconsistent Results</h4>
-        <p>Great cleaning one week, disappointing the next — with no consistent quality standard being followed.</p>
-      </div>
-      <div class="pain-card">
-        <div class="icon">🛡</div>
-        <h4>Compliance &amp; Security Risk</h4>
-        <p>Clinics and financial institutions can't afford uninsured, unscreened crews handling sensitive spaces.</p>
-      </div>
-      <div class="pain-card">
-        <div class="icon">📞</div>
-        <h4>No Accountability</h4>
-        <p>Missed a spot? Good luck reaching anyone. No dedicated contact means no one owns the problem.</p>
-      </div>
-      <div class="pain-card">
-        <div class="icon">🔁</div>
-        <h4>High Staff Turnover</h4>
-        <p>New, unfamiliar faces every few weeks means retraining, security concerns, and dropped standards.</p>
-      </div>
+      <span class="eyebrow">The Difference</span>
+      <h2>A Cleaning Company You Can Actually Count On</h2>
+      <p style="margin-bottom:16px;">Facility managers don't change cleaning companies because of price — they change because of inconsistent results, poor communication, missed details, and a lack of accountability.</p>
+      <p>Regency Commercial Cleaning provides dependable cleaning teams, professional processes, and customized service plans designed around your facility.</p>
     </div>
   </div>
 </section>
@@ -486,20 +469,27 @@
     <div class="section-head">
       <span class="eyebrow">See Who Shows Up</span>
       <h2>Real Crews. Real Accountability.</h2>
-      <p>Every technician wears a uniform, carries commercial-grade equipment, and is background-checked before ever setting foot on your property.</p>
+      <p>At Regency, you know who is entering your facility. Our cleaning professionals are:</p>
     </div>
+    <ul class="crew-checklist">
+      <li><span class="chk">✓</span> Uniformed</li>
+      <li><span class="chk">✓</span> Background-checked</li>
+      <li><span class="chk">✓</span> Fully insured and bonded</li>
+      <li><span class="chk">✓</span> Equipped with professional commercial cleaning equipment</li>
+    </ul>
+    <p class="crew-belief">We believe great cleaning starts with great people.</p>
     <div class="crew-grid">
       <figure class="crew-photo">
         <img src="images/team-office-cleaning.webp" alt="Two uniformed Regency Commercial Cleaning staff cleaning an open-plan office with backpack vacuum equipment" loading="lazy">
-        <figcaption><strong>Office &amp; Facility Teams</strong>Uniformed crews with commercial backpack vacuums for detailed office cleaning.</figcaption>
+        <figcaption><strong>Professional Office &amp; Facility Teams</strong>Detailed commercial cleaning performed by trained teams who understand the importance of consistency.</figcaption>
       </figure>
       <figure class="crew-photo">
         <img src="images/team-floor-care.webp" alt="Regency technician operating a commercial auto floor scrubber in a facility" loading="lazy">
-        <figcaption><strong>Commercial Floor Care</strong>Industrial scrubbing equipment for deep floor care in high-traffic facilities.</figcaption>
+        <figcaption><strong>Commercial Floor Care</strong>Professional equipment and cleaning methods designed for high-traffic commercial environments.</figcaption>
       </figure>
       <figure class="crew-photo">
         <img src="images/team-reception-cleaning.webp" alt="Regency Commercial Cleaning staff member disinfecting a reception desk with cleaning solution" loading="lazy">
-        <figcaption><strong>Detail &amp; Disinfection</strong>Every high-touch surface wiped down and sanitized on every visit.</figcaption>
+        <figcaption><strong>Detail-Focused Cleaning</strong>Attention to high-touch areas and the details that create a cleaner, healthier workplace.</figcaption>
       </figure>
     </div>
   </div>
@@ -509,70 +499,70 @@
 <section class="bg-paper" id="services">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Our Services</span>
+      <span class="eyebrow">Customized Cleaning Plans — Not One-Size-Fits-All</span>
       <h2>Commercial Cleaning Built Around Your Facility</h2>
-      <p>Every property is different. We build an à la carte cleaning plan around your industry's exact requirements — not a one-size-fits-all checklist.</p>
+      <p>Every facility has different requirements. Regency creates an à la carte cleaning plan based on your building, priorities, schedule, and budget.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card">
         <div class="num">01 · OFFICES</div>
         <h3>Office &amp; Facility Cleaning</h3>
-        <p class="desc">Make a great first impression on clients and staff with eco-friendly, detail-driven cleaning.</p>
+        <p class="desc">Create a cleaner, more professional environment for your employees and customers.</p>
         <ul>
-          <li>Full sanitation of kitchens &amp; washrooms</li>
-          <li>Complete floor care — vacuum, mop, buff</li>
-          <li>Elevator &amp; stairwell cleaning</li>
-          <li>Supply restocking (paper towel, tissue etc.)</li>
+          <li>Kitchens, washrooms, and common areas</li>
+          <li>Vacuuming, mopping, and floor care</li>
+          <li>High-traffic area cleaning</li>
+          <li>Supply restocking available</li>
         </ul>
-        <a class="svc-link" href="#quote">Get a quote for my office →</a>
+        <a class="svc-link" href="#quote">Get a Quote for Your Office →</a>
       </div>
       <div class="svc-card">
         <div class="num">02 · FINANCIAL</div>
         <h3>Financial Institution Cleaning</h3>
-        <p class="desc">Insured, bonded, background-checked crews built for the security your branch demands.</p>
+        <p class="desc">Professional cleaning teams for environments where trust, security, and consistency matter.</p>
         <ul>
-          <li>Bonded &amp; background-checked staff</li>
-          <li>Uniformed, easily identifiable teams</li>
-          <li>Disinfection of high-touch areas</li>
-          <li>Carpet cleaning &amp; furniture polishing</li>
+          <li>Insured and bonded employees</li>
+          <li>Background-checked, uniformed teams</li>
+          <li>High-touch surface cleaning</li>
+          <li>Professional branch cleaning procedures</li>
         </ul>
-        <a class="svc-link" href="#quote">Get a quote for my branch →</a>
+        <a class="svc-link" href="#quote">Get a Quote for Your Branch →</a>
       </div>
       <div class="svc-card">
         <div class="num">03 · MEDICAL</div>
         <h3>Medical Clinic Cleaning</h3>
-        <p class="desc">Hospital-grade, aseptic cleaning procedures for exam rooms, waiting areas &amp; nursing stations.</p>
+        <p class="desc">Reliable cleaning services designed for healthcare environments.</p>
         <ul>
-          <li>Approved aseptic cleaning procedures</li>
-          <li>Exam &amp; waiting room sanitization</li>
-          <li>Nursing station cleaning</li>
-          <li>Full disinfection of high-touch surfaces</li>
+          <li>Exam room cleaning</li>
+          <li>Waiting room sanitization</li>
+          <li>High-touch surface disinfection</li>
+          <li>Professional, dependable cleaning teams</li>
         </ul>
-        <a class="svc-link" href="#quote">Get a quote for my clinic →</a>
+        <a class="svc-link" href="#quote">Get a Quote for Your Clinic →</a>
       </div>
       <div class="svc-card">
         <div class="num">04 · DENTAL</div>
         <h3>Dental Clinic Cleaning</h3>
-        <p class="desc">Hospital-grade disinfectants and protocols built for dental compliance requirements.</p>
+        <p class="desc">Specialized cleaning support for dental practices.</p>
         <ul>
-          <li>Operatory &amp; treatment room sanitization</li>
-          <li>Imaging &amp; x-ray room cleaning</li>
-          <li>Industry-approved disinfection protocols</li>
-          <li>Confidential, precision-trained crews</li>
+          <li>Treatment room cleaning</li>
+          <li>Reception and waiting area care</li>
+          <li>Disinfection of high-touch areas</li>
+          <li>Discreet, professional cleaning teams</li>
         </ul>
-        <a class="svc-link" href="#quote">Get a quote for my practice →</a>
+        <a class="svc-link" href="#quote">Get a Quote for Your Practice →</a>
       </div>
       <div class="svc-card">
         <div class="num">05 · MULTI-FAMILY</div>
-        <h3>Apartment &amp; Building Cleaning</h3>
-        <p class="desc">Keeping common areas and amenities spotless and welcoming for residents and guests.</p>
+        <h3>Apartment &amp; Commercial Building Cleaning</h3>
+        <p class="desc">Keep shared spaces clean, welcoming, and maintained for residents, tenants, and visitors.</p>
         <ul>
-          <li>Elevator &amp; hallway cleaning</li>
-          <li>On-demand move-in / move-out cleaning</li>
-          <li>Amenities room &amp; gym sanitization</li>
-          <li>Consistent, trained cleaning crews</li>
+          <li>Hallways and common areas</li>
+          <li>Elevator cleaning</li>
+          <li>Amenity areas</li>
+          <li>Move-in/move-out cleaning available</li>
         </ul>
-        <a class="svc-link" href="#quote">Get a quote for my property →</a>
+        <a class="svc-link" href="#quote">Get a Quote for Your Property →</a>
       </div>
       <div class="svc-card" style="background:var(--ink);border-color:var(--ink);">
         <h3 style="color:#fff;">Not Sure Which Plan Fits?</h3>
@@ -597,134 +587,131 @@
   </div>
 </div>
 
+<!-- ============ WHY CHOOSE US / COMPARISON ============ -->
+<section class="bg-paper">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Businesses Switch to Regency</span>
+      <h2>Built Different From a Typical Cleaning Company</h2>
+    </div>
+    <div class="compare-wrap">
+      <div class="compare-row head-row">
+        <div>What You Get</div>
+        <div class="brand-col">Regency Commercial Cleaning</div>
+        <div>Typical Cleaner</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">Insured &amp; bonded employees</div>
+        <div class="yes"><span class="ic-yes">✓</span> Every team member</div>
+        <div class="no"><span class="ic-no">✕</span> Often unclear</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">Background-checked staff</div>
+        <div class="yes"><span class="ic-yes">✓</span> Thorough checks</div>
+        <div class="no"><span class="ic-no">✕</span> Not always provided</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">Uniformed employees</div>
+        <div class="yes"><span class="ic-yes">✓</span> Professional appearance</div>
+        <div class="no"><span class="ic-no">✕</span> Inconsistent</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">Facility-specific experience</div>
+        <div class="yes"><span class="ic-yes">✓</span> Offices, medical, dental &amp; financial</div>
+        <div class="no"><span class="ic-no">✕</span> One-size-fits-all</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">Customized cleaning plans</div>
+        <div class="yes"><span class="ic-yes">✓</span> Built around your needs</div>
+        <div class="no"><span class="ic-no">✕</span> Fixed packages</div>
+      </div>
+      <div class="compare-row">
+        <div class="feature">BBB Accreditation</div>
+        <div class="yes"><span class="ic-yes">✓</span> A+ Accredited Business</div>
+        <div class="no"><span class="ic-no">✕</span> Not always</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PROCESS ============ -->
 <section>
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">How It Works</span>
-      <h2>From Free Quote to Spotless Facility</h2>
-      <p>A simple, no-pressure process built to get your facility a custom cleaning plan fast.</p>
+      <span class="eyebrow">From Free Quote to Reliable Cleaning</span>
+      <h2>A Simple Process Built Around Your Facility</h2>
     </div>
     <div class="process-grid">
       <div class="process-step">
         <div class="process-line"></div>
         <div class="step-num">1</div>
         <h4>Request Your Free Quote</h4>
-        <p>Fill out the short form above — no obligation, no spam.</p>
+        <p>Tell us about your facility and cleaning requirements.</p>
       </div>
       <div class="process-step">
         <div class="process-line"></div>
         <div class="step-num">2</div>
-        <h4>On-Site Walkthrough</h4>
-        <p>We assess your facility and build a custom à la carte cleaning plan.</p>
+        <h4>Facility Walkthrough</h4>
+        <p>We visit your property and recommend the right cleaning scope and schedule.</p>
       </div>
       <div class="process-step">
         <div class="process-line"></div>
         <div class="step-num">3</div>
-        <h4>Bonded Team Deployed</h4>
-        <p>A background-checked, uniformed crew is assigned to your property.</p>
+        <h4>Professional Team Assigned</h4>
+        <p>A trained Regency team begins servicing your facility.</p>
       </div>
       <div class="process-step">
         <div class="step-num">4</div>
-        <h4>Ongoing Quality Checks</h4>
-        <p>We monitor standards continuously so quality never slips.</p>
+        <h4>Ongoing Quality Monitoring</h4>
+        <p>We maintain communication and standards to ensure consistent results.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHY CHOOSE US / COMPARISON ============ -->
-<section class="bg-paper">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Why Choose Regency</span>
-      <h2>Built Different From a Typical Cleaning Company</h2>
-      <p>See exactly why Nanaimo offices, clinics, and financial institutions choose Regency over a generic janitorial vendor.</p>
-    </div>
-    <div class="compare-wrap">
-      <div class="compare-row head-row">
-        <div>What You Get</div>
-        <div class="brand-col">Regency Commercial</div>
-        <div>Typical Cleaner</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">Insured &amp; bonded staff</div>
-        <div class="yes"><span class="ic-yes">✓</span> Every team member</div>
-        <div class="no"><span class="ic-no">✕</span> Often unverified</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">Background-checked crews</div>
-        <div class="yes"><span class="ic-yes">✓</span> Vigorous checks</div>
-        <div class="no"><span class="ic-no">✕</span> Rarely screened</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">Uniformed, identifiable teams</div>
-        <div class="yes"><span class="ic-yes">✓</span> Always uniformed</div>
-        <div class="no"><span class="ic-no">✕</span> Unmarked crews</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">Industry-specific protocols</div>
-        <div class="yes"><span class="ic-yes">✓</span> Medical, dental, financial</div>
-        <div class="no"><span class="ic-no">✕</span> One-size-fits-all</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">Custom à la carte pricing</div>
-        <div class="yes"><span class="ic-yes">✓</span> Pay for what you need</div>
-        <div class="no"><span class="ic-no">✕</span> Fixed rigid packages</div>
-      </div>
-      <div class="compare-row">
-        <div class="feature">BBB accredited</div>
-        <div class="yes"><span class="ic-yes">✓</span> A+ rating</div>
-        <div class="no"><span class="ic-no">✕</span> No accreditation</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIALS (placeholder — swap with real client quotes) ============ -->
+<!-- ============ TESTIMONIALS ============ -->
 <section>
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Client Feedback</span>
       <h2>What Facility Managers Say</h2>
-      <p>Sample feedback format — swap in your verified Google/BBB reviews before launch for maximum trust.</p>
     </div>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Reliable, thorough, and easy to reach whenever we need something adjusted. Our office has never looked better."</p>
+        <p class="quote">"Regency has been reliable, professional, and easy to communicate with. Their team consistently delivers great service."</p>
         <div class="testi-who">
           <div class="avatar">OM</div>
           <div>
             <div class="name">Office Manager</div>
-            <div class="role">Professional Services Firm, Nanaimo</div>
+            <div class="role">Nanaimo</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Background-checked, uniformed staff gave us real peace of mind for our branch cleaning needs."</p>
+        <p class="quote">"Having uniformed, professional cleaners gives us confidence our facility is being looked after properly."</p>
         <div class="testi-who">
-          <div class="avatar">BM</div>
+          <div class="avatar">FM</div>
           <div>
-            <div class="name">Branch Manager</div>
-            <div class="role">Financial Institution, Nanaimo</div>
+            <div class="name">Facility Manager</div>
+            <div class="role">Nanaimo</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="quote">"Our clinic passes every inspection with room to spare since switching to Regency's disinfection protocols."</p>
+        <p class="quote">"Great communication and dependable service. Regency has been a great partner."</p>
         <div class="testi-who">
-          <div class="avatar">CO</div>
+          <div class="avatar">CC</div>
           <div>
-            <div class="name">Clinic Owner</div>
-            <div class="role">Medical Practice, Nanaimo</div>
+            <div class="name">Commercial Client</div>
+            <div class="role">Nanaimo</div>
           </div>
         </div>
       </div>
     </div>
-    <p class="testi-note">Illustrative examples — replace with real, permission-cleared client testimonials before publishing.</p>
+    <p class="testi-note">(Replace with verified Google reviews before launch.)</p>
   </div>
 </section>
 
@@ -737,24 +724,24 @@
     </div>
     <div class="faq-list">
       <details class="faq-item" open>
-        <summary>What areas do you serve?</summary>
-        <p>Regency provides commercial cleaning throughout Nanaimo, BC and the surrounding Vancouver Island area.</p>
+        <summary>Do you use your own cleaning staff or subcontractors?</summary>
+        <p>Regency uses trained Regency employees who are uniformed, insured, and background-checked. We believe having our own team allows us to provide better consistency, communication, and accountability.</p>
       </details>
       <details class="faq-item">
-        <summary>Are your cleaning staff insured and background-checked?</summary>
-        <p>Yes. Every team member is insured, bonded, and undergoes a thorough background check — especially important for financial institution and medical/dental clinic cleaning.</p>
+        <summary>How do you maintain consistent cleaning quality?</summary>
+        <p>We focus on trained teams, clear expectations, and ongoing communication to help ensure your facility receives reliable service every visit.</p>
       </details>
       <details class="faq-item">
-        <summary>Do you offer customized cleaning schedules?</summary>
-        <p>Yes. We build an à la carte plan around your facility's frequency, scope, and budget — daily, weekly, or custom schedules.</p>
+        <summary>Will I have a dedicated contact if I need something addressed?</summary>
+        <p>Yes. We believe communication is a key part of great service. If you have a question, concern, or adjustment request, our team is available to help.</p>
       </details>
       <details class="faq-item">
-        <summary>How fast can I get a quote?</summary>
-        <p>Submit the form above and a Regency specialist will typically respond within one business day to schedule a free on-site walkthrough.</p>
+        <summary>What happens if my cleaning needs change over time?</summary>
+        <p>As your facility evolves, your cleaning requirements may change too. We work with clients to adjust priorities, schedules, and service needs when necessary.</p>
       </details>
       <details class="faq-item">
-        <summary>Do you clean medical and dental facilities?</summary>
-        <p>Yes. Our teams follow hospital-grade, industry-approved disinfection protocols for medical clinics, dental practices, exam rooms, and imaging areas.</p>
+        <summary>How quickly can we get started?</summary>
+        <p>After a free facility assessment, we'll provide a clear cleaning plan and quote. Once approved, we'll work with you to schedule your service start date.</p>
       </details>
     </div>
   </div>
@@ -763,11 +750,11 @@
 <!-- ============ FINAL CTA ============ -->
 <section class="final-cta">
   <div class="wrap">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#7FE3D8;">Ready When You Are</span>
-    <h2>Get a Spotless, Compliant Facility — Free Quote in 24 Hours</h2>
-    <p>Join the Nanaimo offices, clinics, and buildings that trust Regency for consistent, accountable commercial cleaning.</p>
+    <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#7FE3D8;">Request Your Free Cleaning Assessment Today</span>
+    <h2>Ready for a Cleaning Company You Can Count On?</h2>
+    <p>Join Nanaimo businesses that trust Regency Commercial Cleaning for professional, consistent facility care.</p>
     <div class="final-cta-btns">
-      <a class="btn btn-primary" href="#quote">🔥 Get My Free Quote</a>
+      <a class="btn btn-primary" href="#quote">Get My Free Quote</a>
       <a class="btn btn-ghost" href="tel:2506670422">☎ Call 250-667-0422</a>
     </div>
   </div>
@@ -778,8 +765,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">Regency Commercial Cleaning</div>
-        <p style="line-height:1.6;max-width:260px;">Bonded, insured commercial cleaning for offices, financial institutions, medical &amp; dental clinics, and apartment buildings across Nanaimo, BC.</p>
+        <div class="footer-logo">Regency Commercial Cleaning Ltd.</div>
+        <p style="line-height:1.6;max-width:280px;">Professional commercial cleaning services for offices, medical clinics, dental practices, financial institutions, apartment buildings, and commercial facilities throughout Nanaimo and Vancouver Island.</p>
       </div>
       <div>
         <h5>Services</h5>
@@ -804,14 +791,17 @@
         <ul>
           <li>5525 Turner Rd, Nanaimo BC</li>
           <li><a href="tel:2506670422">250-667-0422</a></li>
-          <li><a href="tel:2506180100">250-618-0100</a></li>
           <li><a href="mailto:info@regencycommercialcleaning.com">info@regencycommercialcleaning.com</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Regency Commercial Cleaning Ltd. All rights reserved.</span>
-      <span>BBB A+ Accredited Business</span>
+      <span style="display:flex;gap:16px;flex-wrap:wrap;">
+        <span>✓ BBB A+ Accredited Business</span>
+        <span>✓ Insured &amp; Bonded</span>
+        <span>✓ Locally Owned &amp; Operated</span>
+      </span>
     </div>
   </div>
 </footer>
@@ -829,21 +819,9 @@
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    
-    // Get form data
-    const fname = document.getElementById('fname').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const facility = document.getElementById('facility').value;
-    const notes = document.getElementById('notes').value;
-    
-    // Log the lead (you can integrate with email service later)
-    console.log('New Lead:', { fname, phone, email, facility, notes, timestamp: new Date().toISOString() });
-    
+    // TODO: replace this block with your real form handler (CRM webhook, email API, etc.)
     // Fire Google Ads conversion tracking event here, e.g.:
     // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
-    
-    // Show success state
     formState.style.display = 'none';
     successState.style.display = 'block';
   });
